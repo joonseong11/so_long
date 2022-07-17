@@ -6,7 +6,7 @@
 /*   By: jujeon <jujeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 00:08:11 by jujeon            #+#    #+#             */
-/*   Updated: 2022/07/18 01:20:04 by jujeon           ###   ########seoul.kr  */
+/*   Updated: 2022/07/18 01:32:12 by jujeon           ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,11 @@ void check_map_component(t_info *info)
 			++cnt_C;
 		else if (info->str_map[i] == 'P')
 			++cnt_P;
+		else if (info->str_map[i] == '0' || info->str_map[i] == '1' \
+			|| info->str_map[i] == '\n')
+			;
+		else
+			get_error(MAPERROR);
 		++i;
 	}
 	info->coin_on_map = cnt_C;
