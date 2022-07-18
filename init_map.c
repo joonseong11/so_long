@@ -6,7 +6,7 @@
 /*   By: jujeon <jujeon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 00:08:11 by jujeon            #+#    #+#             */
-/*   Updated: 2022/07/18 14:46:49 by jujeon           ###   ########.fr       */
+/*   Updated: 2022/07/18 16:52:50 by jujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ void	check_map_rectagular(t_info *info)
 		if (i % (info->wid + 1) != info->wid \
 			&& i / (info->wid + 1) != info->hei - 1)
 			get_error(MAPERROR);
-		++i;
+		if (info->str_map[i] != (char) NULL)
+			++i;
 	}
 }
 
