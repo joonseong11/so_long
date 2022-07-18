@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_error.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jujeon <jujeon@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: jujeon <jujeon@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 00:12:25 by jujeon            #+#    #+#             */
-/*   Updated: 2022/07/18 00:12:41 by jujeon           ###   ########seoul.kr  */
+/*   Updated: 2022/07/18 14:02:52 by jujeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
-void get_error(int e)
+void	get_error(int e)
 {
 	if (e == ALLOC)
 		printf("Error\n: allocation fail\n");
